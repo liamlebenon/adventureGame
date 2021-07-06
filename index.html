@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Adventure Game</title>
+</head>
+
+<body>
+    <section id="titleScreen">
+        <header><h1>Welcome to Adventure Game</h1></header>
+        <p>Press the button below to begin your journey...</p>
+        <button id="startGame">Start Game</button>
+    </section>
+
+    <section id="characterCreator">
+        <h2>Create your Character</h2>
+        <label for="userName">Enter your Name: </label>
+        <input id="userName" type="text" required><br><br>
+
+        <label for="userRace" id="userRace">Choose your Race: </label><br>        
+            <input type="radio" id="orc" name="userRace" value="orc">
+            <label for="orc">Orc</label><br>
+
+            <input type="radio" id="nord" name="userRace" value="nord">
+            <label for="nord">Nord</label><br>
+
+            <input type="radio" id="peke" name="userRace" value="peke">
+            <label for="peke">Peke</label>
+
+        <div id="startingStats">
+            <h3>Your Stats:</h3>
+            <p>Attack: <span id="defaultAttack"></span></p>
+            <p>Defence: <span id="defaultDefence"></span></p>
+            <p>Charisma: <span id="defaultCharisma"></span></p>
+            <h4>Brief Description</h4>
+            <p id="briefDescription"></p>
+        </div>
+        <button id="finishCharacter">Finish your Character</button>
+    </section>
+
+    <section id="characterSummary">
+        <h2>Your Character Summary: </h2>
+        <p id="characterSummerized"></p>
+
+        <button id="beginJourney">Begin your Journey!</button>
+    </section>
+
+
+
+<script src="script.js"></script>
+</body>
+<footer>
+
+</footer>
+</html>

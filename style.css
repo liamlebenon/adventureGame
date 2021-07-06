@@ -1,0 +1,12 @@
+/* Style for Adventure Game */
+#titleScreen {
+    display: block;
+}
+
+#characterCreator {
+    display: none;
+}
+
+#characterSummary {
+    display: none;
+}
